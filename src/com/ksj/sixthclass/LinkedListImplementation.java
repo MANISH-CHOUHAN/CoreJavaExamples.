@@ -50,7 +50,12 @@ public class LinkedListImplementation {
 
     public void delete(int x)
     {
-
+Node previousNode=head;
+Node currentNode=head;
+if (x==head.value)
+{
+    head=head.next;
+}
     }
 
     public static void main(String[] args) {
@@ -60,6 +65,8 @@ public class LinkedListImplementation {
         ls.insert(4);
         ls.print();
         ls.insertAfter(2,6);
+        ls.print();
+        ls.delete(2);
         ls.print();
 
     }
